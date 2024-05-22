@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.0.0/dist/tf.min.js"></script>
+
+    <title>Manipulación de imágenes con Tensors</title>
+  </head>
+  <body>
+    <h1>Manipulación de imágenes con Tensors</h1>
+    <h3>Imagen inicial</h3>
+    <img id="image" src="/imagen_Ia.jpg" />
+
+    <div>
+      <h3>
+        Tensor de Corte
+        <pre>[265, 245, 3]</pre>
+      </h3>
+      <canvas id="imageCroppedCanvas"></canvas>
+    </div>
+    <div>
+      <h3>Re-dimensión por Nearest Neighbor</h3>
+      <div>
+        <canvas id="nnCanvas" />
+      </div>
+
+      <h3>Re-dimensión Bilinear</h3>
+      <div>
+        <canvas id="blCanvas"></canvas>
+      </div>
+      <h3>Imagen con rotación</h3>
+      <div>
+        <canvas id="flippedCanvas"></canvas>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+    <script>
+      // Simple Tensor Flip
+      
+    </script>
+  </body>
+</html>
